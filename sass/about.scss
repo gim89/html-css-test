@@ -1,0 +1,42 @@
+.about{
+    background-color: #fff;
+    padding-top: rem(141px);
+    padding-bottom: rem(146px);
+}
+
+.about__container{
+    @extend .container;
+    display: flex;
+}
+
+.about__img{
+    width: 43.3%;
+    margin-right: rem(79px);
+}
+
+.about__title{
+    position: relative;
+    margin-bottom: rem(41px);
+    margin-left: rem(36px);
+
+    &--before:before{
+        @include pseudo(rem(6px), rem(36px), 0, rem(-35px));
+        background-color: #e74c3c;
+    }
+}
+
+.about__text{
+    margin-bottom: rem(33px);
+    font-family: 'Sourse Sans Pro';
+    line-height: 2;
+    word-spacing: 2px;
+
+    &--last-child{
+        margin-bottom: rem(43px);
+    }
+}
+
+.about__btn{
+    @extend %btn;
+    padding: rem(18px) rem(44px);
+}
